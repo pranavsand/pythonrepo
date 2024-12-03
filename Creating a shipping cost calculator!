@@ -1,0 +1,23 @@
+##📦📬🚚 Creating a shipping cost calculator! ⚙️
+You need to create a program that calculates the cost of shipping a package based on its weight and destination 📦💰
+🌍 Domestic shipping within the country :
+* Packages weighing up to 1 kg cost Rs.50 to ship 🤑
+Each additional kg costs Rs.10 extra 💰
+🌎 International shipping to other countries 🌏:
+* Packages weighing up to 1 kg cost Rs.500 to ship 🤑
+Each additional kg costs Rs.100 extra 💰
+Ready to ship? 🚛🚀
+---------------------------------------------------------------------------------------------------------------------------------
+ship_type = input("Is international courier yes/no:")
+if ship_type.lower() == "yes":
+  weight = input("Enter the package weight in Kgs: ")
+  if weight==1:
+    print("The shipping cost is Rs.500")
+  else:
+    print("The shipping cost is Rs.",500+(int(weight)-1)*100)
+else:
+  weight = input("Enter the package weight in Kgs: ")
+  if weight==1:
+    print("The shipping cost is Rs.50")
+  else:
+    print("The shipping cost is Rs.",50+(int(weight)-1)*10)
