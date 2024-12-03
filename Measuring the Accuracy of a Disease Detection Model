@@ -1,0 +1,47 @@
+## Measuring the Accuracy of a Disease Detection Model- Optional
+If you're not impressed with these usecases yet, understand that you're just getting started with python. Going forward as a data scientist, you'll be using what you've learned to design machine learning models that just might even save lives!!
+Let's say you have created a machine learning model to detect diseases in patients based on their symptoms and medical history. The model has been tested on a dataset of **100 patients**, including **30 with diabetes**, **45 with heart disease**, and **25 with cancer**.
+The model's performance was evaluated in three rounds.
+In the first round, the model correctly **detected diabetes in 25 out of the 30 patients** with the disease.
+In the second round, the model correctly detected **heart disease in 35 out of the 45 patients** with the disease.
+In the final round, the model correctly **detected cancer in 20 out of the 25 patients** with the disease.
+The model's accuracy is defined as the percentage of correctly detected cases out of the total number of patient
+Assess how accurate your model is across these 3 diseases.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Store the number of heart disease patients
+cardiac_patient = 45
+# Store the number of diabetes patients
+diabetic_patient = 30
+# Store the number of cancer patients
+cancer_patient = 25
+# Store the number of your correct guesses of heart disease patients
+corrected_heart_disease = 35/45
+# Store the number of your correct guesses of diabetes patients
+corrected_diabetic = 25/30
+# Store the number of your correct guesses of cancer patients
+corrected_cancer_patients = 20/25
+# Store the number of heart disease patients
+cardiac_patient = 45
+# Store the number of diabetes patients
+diabetic_patient = 30
+# Store the number of cancer patients
+cancer_patient = 25
+# Store the number of your correct guesses of heart disease patients
+corrected_heart_disease = 35/45
+# Store the number of your correct guesses of diabetes patients
+corrected_diabetic = 25/30
+# Store the number of your correct guesses of cancer patients
+corrected_cancer_patients = 20/25
+# Print the heart disease detection accuracy
+heart_disease_accuracy = corrected_heart_disease * 100
+print(heart_disease_accuracy)
+# Print the diabetes detection accuracy
+diabetic_accuracy = corrected_diabetic * 100
+print(diabetic_accuracy)
+# Print the cancer detection accuracy
+cancer_accuracy = corrected_cancer_patients * 100
+print(cancer_accuracy)
+# Print the overall accuracy of your model # Average of accuracy in 3 rounds
+overall_accuracy = (heart_disease_accuracy + diabetic_accuracy + cancer_accuracy)/3
+print(overall_accuracy)
+
